@@ -31,9 +31,9 @@ body{
 
 }
 
-.wrapper{
+.container{
     border-radius: 30px;
-    max-width: 1000px;
+    max-width: 1050px;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -148,12 +148,12 @@ header {
     display: flex;
     gap: 20px;
 
-    transition: background-color 0.3s;  
 }
 
 nav ul {
     list-style: none;
     display: flex;
+
   }
 
 .n-links li {
@@ -181,10 +181,18 @@ nav ul li {
     color: cyan;
     background-color: #00bcd4;  
     x
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in;
     transform: scale(1.2);
   }
 
+.n-links li:active {
+    border:red 5px solid;
+  }
+
+
+.n-links li:focus {
+    border:red 5px solid;
+  }
 .contact-btn {
     background-color:purple;
 
@@ -198,10 +206,21 @@ nav ul li {
     background-color: #00bcd4;
     color: white;
 
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in;
     transform: scale(1.2);
 }
 
+.contact-btn:active {
+    border:red 5px solid;
+    overflow:hidden;
+    border-radius: 0px;
+  }
+
+.contact-btn:focus {
+    border:red 5px solid;
+    overflow:hidden;
+    border-radius: 0px;
+  }
 
 
 .img{
@@ -261,8 +280,11 @@ nav ul li {
 }
 
 .learn-more:active{
-    border:red 2px solid;
+    border:red 5px solid;
+}
 
+.learn-more:focus{
+    border:red 5px solid;
 }
 
 .learn-more:hover {
@@ -275,7 +297,7 @@ nav ul li {
 
 
 
-.skip-link {
+.skip-linka {
     position: relative;
     z-index: 10; 
     top: -40px;
@@ -288,11 +310,33 @@ nav ul li {
     
 }
 
-.skip-link:focus {
+.skip-linka:focus {
+    top: 50%;
+    left: 49%;
+    z-index: 656;
+    
+}
+
+.skip-linkb {
+    position: relative;
+    z-index: 10; 
+    top: -40px;
+    padding: 10px; 
+
+    transition: top 0.5s;
+    
+    background: #ffffff;
+    color: #000000;
+    
+}
+
+.skip-linkb:focus {
     top: 50%;
     left: 50%;
     z-index: 656;
+    
 }
+
 
 
 footer {
